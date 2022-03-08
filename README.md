@@ -1,21 +1,28 @@
-docker build -t docker-nginx .
+# nginx/conf/ssl.conf
+```
+server {
+  listen 443 ssl;
+  ssl_certificate /etc/nginx/conf.d/192.168.1.204.crt;
+  ssl_certificate_key /etc/nginx/conf.d/192.168.1.204.key;
+  location / {
+	#
+     root   /usr/share/nginx/html;
+     index  index.html index.htm;
+ }
+}
+```
+# Getting started nginx with certificate
+```bash
+docker-compose up -d --build
+```
+# Quit 
+```bash
+docker-compose down 
+```
+# Quit and remove Volume
+```bash
+docker-compose down -v
+```
 
-docker run --name docker-nginx -d -p 80:80 docker-nginx
-
-http://10.145.89.1/
-
-docker-nginx        latest              7de2d50ade03        44 seconds ago      20.1MB
-
-docker exec -it docker-nginx /bin/sh
-
-docker container prune -f
-
-docker image prune -a -f
-
-docker volume prune -f
-
-docker network prune -f
-
-docker system prune -f
-
-sudo rm -rf /var/lib/docker/volumes/*
+# Open web interface
+https://[IP]
