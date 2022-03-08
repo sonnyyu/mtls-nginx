@@ -1,0 +1,14 @@
+services:
+  webserver:
+#    image: nginx:latest
+    build: .
+    container_name: nginx
+#    user: root
+    ports:
+      - 80:80
+      - 443:443
+    restart: always
+    volumes:
+      - ./nginx/conf/ssl.conf:/etc/nginx/conf.d/ssl.conf:ro
+      - ./nginx/cert:/etc/nginx/cert
+#     - ./html:/usr/share/nginx/html
