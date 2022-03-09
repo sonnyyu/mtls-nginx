@@ -30,6 +30,7 @@ curl  --cacert ca.crt https://192.168.1.204
 curl  --cacert ca.crt https://192.168.1.204/admin/
 curl --cert client1.crt --key client1.key --cacert ca.crt https://192.168.1.204/admin/
 curl --cert client1.crt:password --key client1.key --cacert ca.crt https://192.168.1.204/admin/
+curl --cert-type P12 --cert client1.p12:password --cacert ca.crt https://192.168.1.204
 ```
 # Open web interface
 
