@@ -26,14 +26,10 @@ docker-compose down -v
 ```
 # Test mTlS
 ```bash
-curl   https://192.168.1.204
-curl   --insecure https://192.168.1.204
-cd nginx/cert
-curl  --cacert ca.crt https://192.168.1.204
-curl  --cacert ca.crt https://192.168.1.204/admin/
-curl --cert client1.crt --key client1.key --cacert ca.crt https://192.168.1.204/admin/
-curl --cert client1.crt:password --key client1.key --cacert ca.crt https://192.168.1.204/admin/
-curl --cert-type P12 --cert client1.p12:password --cacert ca.crt https://192.168.1.204
+cd mtls-nginx/cert
+curl --cert client1.crt --key client1.key --cacert ca.crt https://192.168.1.204
+curl --cert client1.crt:password1 --key client1.key --cacert ca.crt https://192.168.1.204
+curl --cert-type P12 --cert client1.p12:password1 --cacert ca.crt https://192.168.1.204
 ```
 # Open web interface
 
