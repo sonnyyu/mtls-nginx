@@ -5,9 +5,8 @@ cd mtls-nginx
 ```
 # Copy all the certificate 
 ```bash
-cd ~/easy-rsa/cert/
-cp * ~/mtls-nginx/nginx/cert/
-cd ~/mtls-nginx
+cd ~/mtls-cert-manage/cert
+cp ca.crt localhost.crt localhost.key   ~/mtls-nginx/nginx/cert/
 ```
 # Getting started nginx with certificate
 ```bash
