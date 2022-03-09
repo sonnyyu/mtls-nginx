@@ -11,14 +11,17 @@ cp ca.crt localhost.crt localhost.key   ~/mtls-nginx/nginx/cert/
 ```
 # Getting started nginx with certificate
 ```bash
+cd ~/mtls-nginx
 docker-compose up -d --build
 ```
 # Quit 
 ```bash
+~/mtls-nginx
 docker-compose down 
 ```
 # Quit and remove Volume
 ```bash
+~/mtls-nginx
 docker-compose down -v
 ```
 # Test mTlS
