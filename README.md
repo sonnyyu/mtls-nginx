@@ -3,7 +3,7 @@
 git clone https://github.com/sonnyyu/mtls-nginx
 cd mtls-nginx
 ```
-# Use mtls-cert-manage generate server/client/ca certificate 
+# Use mtls-cert-manage generate certificate 
 
 [https://github.com/sonnyyu/mtls-cert-manage](https://github.com/sonnyyu/mtls-cert-manage)
 
