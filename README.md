@@ -1,6 +1,6 @@
 # Build it:
 ```bash
-https://github.com/sonnyyu/mutual-TLS-authentication-nginx
+git clone https://github.com/sonnyyu/mutual-TLS-authentication-nginx
 cd mutual-TLS-authentication-nginx
 ```
 # Getting started nginx with certificate
