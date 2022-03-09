@@ -1,13 +1,13 @@
 # Build it:
 ```bash
-git clone https://github.com/sonnyyu/mutual-TLS-authentication-nginx
-cd mutual-TLS-authentication-nginx
+git clone https://github.com/sonnyyu/mtls-nginx
+cd mtls-nginx
 ```
 # Copy all the certificate 
 ```bash
 cd ~/easy-rsa/cert/
-cp * ~/mutual-TLS-authentication-nginx/nginx/cert/
-cd ~/mutual-TLS-authentication-nginx
+cp * ~/mtls-nginx/nginx/cert/
+cd ~/mtls-nginx
 ```
 # Getting started nginx with certificate
 ```bash
