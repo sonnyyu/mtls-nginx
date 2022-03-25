@@ -14,6 +14,8 @@ cd ~/mtls-cert-manage/pki/servercerts
 cp * ~/mtls-nginx/certs
 cd ~/mtls-cert-manage/pki/clientcerts
 cp * ~/mtls-nginx/certs
+cd ~/mtls-nginx/certs
+cp 
 ```
 # Getting started nginx with certificate
 ```bash
