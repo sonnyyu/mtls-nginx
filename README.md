@@ -37,7 +37,7 @@ docker-compose down -v
 cd ~/mtls-nginx/certs
 curl --cert client1.crt --key client1.key --cacert ca.crt https://192.168.1.204
 curl --cert client1.crt:password1 --key client1.key --cacert ca.crt https://192.168.1.204
-curl --cert-type P12 --cert client1.p12 --cacert ca.crt https://192.168.1.204
+curl --cert-type P12 --cert client1.p12:p12pass --cacert ca.crt https://192.168.1.204
 ```
 # Install certificate at PC
 [Install certificate](https://github.com/sonnyyu/mtls-cert-manage#install-certificate-at-windows)
