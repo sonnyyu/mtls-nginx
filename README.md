@@ -1,17 +1,19 @@
-# Build it:
-```bash
-git clone https://github.com/sonnyyu/mtls-nginx
-cd mtls-nginx
-```
-# Use mtls-cert-manage generate certificate 
+# Use mtls-cert-manage generate server/client/ca certificate 
 
 [https://github.com/sonnyyu/mtls-cert-manage](https://github.com/sonnyyu/mtls-cert-manage)
 
-# Copy all the certificate 
+# Copy Certificate from mtls-cert-manage
 ```bash
-cd ~/mtls-cert-manage/cert
-cp *   ~/mtls-nginx/cert
-cp ca.crt localhost.crt localhost.key   ~/mtls-nginx/nginx/cert/
+cd ~/mtls-cert-manage/pki
+./server.sh
+./client.sh
+```
+# Copy Certificate from mtls-cert-manage
+```bash
+cd ~/mtls-cert-manage/pki/servercerts 
+cp * ~/mtls-eclipse-mosquitto/certs
+cd ~/mtls-cert-manage/pki/clientcerts
+cp * ~/mtls-eclipse-mosquitto/certs
 ```
 # Getting started nginx with certificate
 ```bash
