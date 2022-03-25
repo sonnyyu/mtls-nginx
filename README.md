@@ -15,7 +15,7 @@ cp * ~/mtls-nginx/certs
 cd ~/mtls-cert-manage/pki/clientcerts
 cp * ~/mtls-nginx/certs
 cd ~/mtls-nginx/certs
-cp 
+cp 192.168.1.204.crt 192.168.1.204.key ca.crt ~/mtls-nginx/nginx/certs
 ```
 # Getting started nginx with certificate
 ```bash
