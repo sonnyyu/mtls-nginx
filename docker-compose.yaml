@@ -10,5 +10,5 @@ services:
     restart: always
     volumes:
       - ./nginx/conf/ssl.conf:/etc/nginx/conf.d/ssl.conf:ro
-      - ./nginx/cert:/etc/nginx/cert
+      - ./nginx/certs:/etc/nginx/cert
 #     - ./html:/usr/share/nginx/html

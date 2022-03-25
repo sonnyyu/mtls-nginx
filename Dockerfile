@@ -1,5 +1,5 @@
 FROM nginx:alpine
-MAINTAINER Sonny Yu <sonnyyuirm@gmail.com>
+MAINTAINER Sonny Yu <sonnyyu123@gmail.com>
 RUN  apk add --upgrade --no-cache tzdata \
      && rm -rf /var/cache/apk/* /tmp/* \
      && mkdir /etc/nginx/cert
