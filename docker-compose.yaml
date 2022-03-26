@@ -1,9 +1,7 @@
 services:
   nginxmtls:
-#    image: nginx:latest
     build: .
     container_name: nginxmtls
-#    user: root
     ports:
 #      - 80:80
       - 443:443
@@ -11,4 +9,9 @@ services:
     volumes:
       - ./nginx/conf/ssl.conf:/etc/nginx/conf.d/ssl.conf:ro
       - ./nginx/certs:/etc/nginx/cert
-#     - ./html:/usr/share/nginx/html
+    networks:
+      - nginx
+networks:
+  nginx:
+    driver: bridge
+    name: nginx
